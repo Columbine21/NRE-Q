@@ -1,1 +1,1 @@
-from .data import SEMData
+from .semData import SEMData

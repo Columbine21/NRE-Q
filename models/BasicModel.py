@@ -21,7 +21,7 @@ class BasicModel(nn.Module):
             # month day_hours:min:sec.pth
             name = name + time.strftime('%m%d_%H:%M:%S.pth')
         else:
-            name = prefix + self.model_name + '_' + name + '.pth'
+            name = prefix + name + '.pth'
         torch.save(self.state_dict(), name)
 
         return name

@@ -1,7 +1,7 @@
 data_dic ={
     'SEM': {
         'data_root': './dataset',
-        'w2v_path': './dataset/train/w2v.npy',
+        'w2v_path': './dataset/sem-task8/train/w2v.npy',
         'vocab_size': 22315,  # vocab + UNK + BLANK
         'rel_num': 19
     }
@@ -23,7 +23,7 @@ class DefaultConfig(object):
     batch_size = 128  # batch size
     use_gpu = False  # user GPU or not
     gpu_id = 0
-    num_workers = 0  # how many workers for loading data
+    num_workers = 4  # how many workers for loading data
 
     max_len = 80 + 2  # max_len for each sentence + two padding
     limit = 50  # the position range <-limit, limit>
