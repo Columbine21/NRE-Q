@@ -93,6 +93,7 @@ def eval(model, test_data_loader, k):
 
 
 def write_result(model_name, pred_y):
+    
     if model_name.startswith('SEM'):
         with open("./semeval/result.txt", "w") as out:
             start = 8001
